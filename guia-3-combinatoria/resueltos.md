@@ -39,3 +39,52 @@ f(5) : 12
 Rta:
 
 3 * $12^4$
+
+## Ejercicio 15. 
+
+Sea A = { f : {1,2,3,4}  $\Leftrightarrow$ {1,2,3,4,5,6,7,8} tal que f es una función inyectiva }
+
+#### Sea R la relación de equivalencia en A definida por:
+
+$fRg \Leftrightarrow f(1) + f(2) = g(1) + g(2)$
+
+#### Sea f $\in$ A la función definida por
+
+$f(n) = n + 2$
+
+#### Cuantos elementos tiene su clase de equivalencia?
+
+Primero quiero ver cual es su clase de equivalencia que es el conjunto C = { g $\in$ A : $gRf$ }
+
+Este conjunto esta formado por todas las funciones g : {1,2,3,4} $\rightarrow$ {1,2,3,4,5,6,7,8} tal que $gRf$, es decir g(1) + g(2) = f(1) + f(2) y ademas g es inyectiva.
+
+Pero como:
+
+- $f(1) = 1 + 2 = 3$
+- $f(2) = 2 + 2 = 4$
+
+entonces tengo que $f(1) + f(2) = 7$ y el conjunto C se redefine como:
+
+C = { g $\in$ A / g(1) + g(2) = 7 }
+
+Ahora con el conjunto bien definido y claro, se que buscar el cardinal de C no es mas que buscar
+todas las funciones g inyectivas {1,2,3,4} $\rightarrow$ {1,2,3,4,5,6,7,8} tal que $g(1) + g(2) = 7$.
+
+Pero g(1) + g(2) = 7 $\leftrightarrow$:
+
+- $g(1) = 3 \land g(2) = 4$
+- $g(1) = 4 \land g(2) = 3$
+- $g(1) = 5 \land g(2) = 2$
+- $g(1) = 2 \land g(2) = 5$
+- $g(1) = 1 \land g(2) = 6$
+- $g(1) = 6 \land g(2) = 1$
+
+Entonces de mis funciones g : {1,2} $\rightarrow$ {2,3,4,5,6} inyectivas, me sirven solo seis.
+
+
+Luego g(3) tiene #{1,2,3,4,5,6,7,8} - #{1,2} = 6 posibles valores que puede tomar y g(4) tiene 5.
+
+Luego la respuesta es $6 * 6 * 5 = 180$
+
+
+
